@@ -81,14 +81,14 @@ export default function TicketSelector() {
             onClick={() => selectTicket('passaporte')}
             className={`w-full text-left border-2 rounded-xl p-4 transition-all ${
               selected === 'passaporte'
-                ? 'border-[#0d5c54] bg-teal-50'
-                : 'border-gray-200 hover:border-teal-300'
+                ? 'border-[#3d0f0f] bg-red-50'
+                : 'border-gray-200 hover:border-red-300'
             }`}
           >
             <div className="flex items-start justify-between gap-2">
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="text-xs font-bold text-white bg-[#0d5c54] px-2 py-0.5 rounded-full uppercase tracking-wide">
+                  <span className="text-xs font-bold text-white bg-[#3d0f0f] px-2 py-0.5 rounded-full uppercase tracking-wide">
                     Completo
                   </span>
                 </div>
@@ -100,8 +100,8 @@ export default function TicketSelector() {
               </div>
             </div>
             {selected === 'passaporte' && (
-              <div className="mt-3 pt-3 border-t border-teal-200">
-                <p className="text-xs text-[#0d5c54] font-semibold">Acesso completo de 28 de Dezembro a 1 de Janeiro, DIA e NOITE.</p>
+              <div className="mt-3 pt-3 border-t border-red-200">
+                <p className="text-xs text-[#3d0f0f] font-semibold">Acesso completo de 28 de Dezembro a 1 de Janeiro, DIA e NOITE.</p>
               </div>
             )}
           </button>
@@ -111,8 +111,8 @@ export default function TicketSelector() {
             onClick={() => selectTicket('festa-unica')}
             className={`w-full text-left border-2 rounded-xl p-4 transition-all ${
               selected === 'festa-unica'
-                ? 'border-[#0d5c54] bg-teal-50'
-                : 'border-gray-200 hover:border-teal-300'
+                ? 'border-[#3d0f0f] bg-red-50'
+                : 'border-gray-200 hover:border-red-300'
             }`}
           >
             <div className="flex items-start justify-between gap-2">
@@ -128,7 +128,7 @@ export default function TicketSelector() {
 
           {/* Seletor de dia e sessão */}
           {selected === 'festa-unica' && (
-            <div className="border border-teal-200 rounded-xl p-4 bg-teal-50/50 space-y-4">
+            <div className="border border-red-200 rounded-xl p-4 bg-red-50/50 space-y-4">
               {/* Dia */}
               <div>
                 <p className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">Selecione o dia</p>
@@ -139,8 +139,8 @@ export default function TicketSelector() {
                       onClick={() => setSelectedDay(selectedDay === day ? null : day)}
                       className={`text-left px-3 py-2 rounded-lg text-sm font-medium transition-all border ${
                         selectedDay === day
-                          ? 'bg-[#0d5c54] text-white border-[#0d5c54]'
-                          : 'bg-white text-gray-700 border-gray-200 hover:border-teal-400'
+                          ? 'bg-[#3d0f0f] text-white border-[#3d0f0f]'
+                          : 'bg-white text-gray-700 border-gray-200 hover:border-red-400'
                       }`}
                     >
                       {day}
@@ -159,8 +159,8 @@ export default function TicketSelector() {
                       onClick={() => setSelectedSession(selectedSession === key ? null : key)}
                       className={`flex items-center justify-center gap-2 px-3 py-3 rounded-lg text-sm font-bold transition-all border ${
                         selectedSession === key
-                          ? 'bg-[#0d5c54] text-white border-[#0d5c54]'
-                          : 'bg-white text-gray-700 border-gray-200 hover:border-teal-400'
+                          ? 'bg-[#3d0f0f] text-white border-[#3d0f0f]'
+                          : 'bg-white text-gray-700 border-gray-200 hover:border-red-400'
                       }`}
                     >
                       {icon}

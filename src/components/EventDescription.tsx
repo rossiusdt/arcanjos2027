@@ -6,16 +6,13 @@ export default function EventDescription() {
 
         <div className="space-y-4 text-gray-700">
           <p>
-            O Réveillon Arcanjos 2027 é a experiência mais completa para celebrar a virada do ano com muito estilo, música ao vivo e estrutura de alto nível.
+            Vem aí o Pier Rock Festival! 🤘🏽🎸
           </p>
           <p>
-            De 28 de dezembro a 1 de janeiro, cada noite é uma nova celebração: shows exclusivos, ambiente diferenciado e uma energia única que só o Arcanjos N1 proporciona.
+            Com Dino Fonseca, Nando Reis e Cíntia Férsi, o Pier Rock Festival promete uma experiência intensa, daquelas que ficam na memória! 💥🎶
           </p>
-          <p className="font-semibold text-[#0d5c54]">
-            Escolha seu Passaporte ALL-INCLUSIVE e aproveite todos os dias, ou selecione uma Festa Única no dia e período que preferir.
-          </p>
-          <p>
-            Uma virada de ano inesquecível está reservada para você. Garanta já o seu ingresso.
+          <p className="font-semibold text-[#3d0f0f]">
+            Chame a sua galera! Venha curtir conosco essa noite memorável 🤩
           </p>
         </div>
       </section>
